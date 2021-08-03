@@ -1,0 +1,79 @@
+.container{
+    text-align: left;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 0px;
+    width : 70%;
+    max-width: 2000px;
+    background: white;
+    border-radius: 0px;
+    box-shadow:  3px black;
+    color : rgb(9, 6, 15);
+}
+
+.th{
+   padding-right: 50px;
+   padding-left: 25px;
+   padding-bottom: 10px;
+   padding-top: 20px;
+   font-size: larger; 
+   border-bottom: 1px solid rgb(122, 85, 197);
+}
+.table{
+    text-align: center;
+    padding-left: 80px;
+}
+.tb{
+    background-color: rgb(213, 222, 233);
+    margin-left: 100px;
+    padding-bottom: 100px;  
+}
+h1{
+        padding-top: 50px;
+        font-family: 'Nunito Sans', sans-serif;
+}
+.hey{
+    text-align: left;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width : 70%;
+    max-width: 1000px;
+    background: rgba(250, 248, 248, 0.932);
+    border-radius: 4px;
+    box-shadow:  3px black;
+    color : rgb(9, 6, 15);
+}
+html{
+    height: 100%;
+    }
+    body{
+        margin:0px 0px;
+        padding: 0px 0px;
+        min-height: 100% ;
+        background-attachment: scroll;
+        background-repeat:repeat;
+        background: -moz-linear-gradient(top, rgb(14, 100, 199),rgb(121, 11, 211)n);
+        background: -webkit-linear-gradient(left, rgb(82, 177, 221),rgb(13, 26, 202),rgb(137, 6, 155));
+    }
+    .tbody1{
+        margin-top: 100px;
+    }
+    button{
+        background: -webkit-linear-gradient(left, rgb(82, 177, 221),rgb(13, 26, 202),rgb(137, 6, 155)); ;
+        color: aliceblue;
+    }
+    input{
+        background-color: rgb(197, 208, 231);
+        height: 30px;
+        border-radius: 4px;
+    }
+   

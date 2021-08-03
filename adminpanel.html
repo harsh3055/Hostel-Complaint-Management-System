@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Admin screen</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>            
+        
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    </head>
+    <body class = "h-100">
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                <li class="active">
+                    <a class="navbar-brand" style="color: whitesmoke; text-decoration-style: wavy;" href="#">
+                        COMPLAINT APP
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" style="color: whitesmoke; text-decoration-style: wavy;" href="#">
+                       <span style="color: white;">Admin panel</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" style="color: whitesmoke; text-decoration-style: wavy;" href="adminview.html">
+                        <span style="color: white;">Manage Complaints</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="dropdown navbar-right">
+                <button
+                id="option-id" 
+                class="btn btn-light dropdown-toggle bg-dark text-white"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+                    Options
+                </button>
+                <div
+                class="dropdown-menu"
+                aria-labelledby="option-id">
+                    <a class="dropdown-item" id="btn-logout" href = "#">
+                        logout
+                    </a>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+       
+        <div class="row h-100 bg-light">
+
+            <div class="col-lg-0 bg-secondry">
+                <ul class= "nav  flex-coloumn">
+                    <h1 style="color: gray;margin-left: 600px;";>Welcome Admin</h1>
+                </ul>
+               
+            </div>
+        </div>
+            <div class="col-lg-12" style="margin-right: 300px;">
+                <h3 style="color: gray;margin-left: 20px;">Instructions</h3>
+                <div class="container" id="container">
+                    <h5 style="background-color: lemonchiffon; margin-left: -150px; margin-right: 800px;">1.To check all the complaints click
+                    on <b> Manage Complaints</b> on the navigation bar.</br></br>2.For <b>Log-out</b> click on <b>Options</b> which is in top right corner of the navigation bar.</br></br></h5>
+                    <h5 style="background-color: rgb(236, 178, 168); margin-left: -150px; margin-right: 800px;">3.Always Log out before leaving the website.</h5>
+                </div>
+            </div>
+       
+       
+    
+        
+          
+        <script src ="js/indexadmin.js"></script>
+        <script>
+            firebase.auth().onAuthStateChanged(function(user)
+            {
+               if(!user){
+                   window.location.href = "signin.html";
+               }
+            });
+        </script>
+          
+    </body>
+</html>

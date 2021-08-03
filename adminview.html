@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <h1 style="text-align: center; color:white; margin-top: 20px;">TOTAL COMPLAINTS</h1>
+        <style type="text/css">
+        
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href ="styles/adminview.css"/>
+        
+    </head>
+    <body>
+
+        <div class ="container">
+
+        <table class="table">
+            <thead style="
+            border-bottom: 2px solid rgb(9, 6, 15);">
+                <th class="th">Sno</th> 
+                <th class="th">Name</th> 
+                <th class="th">Room no</th>
+                <th class="th">Phone No</th>
+                <th class="th">Complanit type</th>
+                <th class="th">Complaint</th>
+            </thead>
+            <tbody id="tbody1" class="tb">
+                
+            </tbody>
+        </table>
+        </div>
+        <div class="hey">
+            <div style="text-align: center; align-content: center;padding-left: 100px;padding-top: 20px;padding-bottom: 20px;">
+                <h2 style="text-align: center; color:black; margin-top: 20px";>Enter Respective Room Number To Delete <u>Resolved</u> Complaint </h2>
+        Room Number :  <input id = "roomboxx" type="text"     name="Room Number"  placeholder="Room no">
+               <br><br> 
+        <button id="delete">Delete Complaint </button>
+            </div>
+         </div>
+         <div style="margin-top: 21%; font-size: 15px;">
+            <button style="margin-bottom: 700px;margin-left: 800px;margin-top: -300px; align-items: center;">
+            <a style="color: aliceblue;";" href="adminpanel.html" class="text-white">BACK</a>
+            </button>
+       </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+        <script src="js/adminview.js"></script>
+    </body>
+</html>

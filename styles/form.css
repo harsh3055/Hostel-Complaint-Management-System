@@ -1,0 +1,81 @@
+
+            .form{
+                text-align: left;
+                display: flex;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 50px;
+                padding-right: 100px;
+                padding-left: 100px;
+                width : 50%;
+                max-width: 700px;
+                background: white;
+                border-radius: 0px;
+                box-shadow:  3px black;
+                color : rgb(9, 6, 15);
+            }
+            h1{
+                margin-top: 50px;
+                font-family: 'Nunito Sans', sans-serif;
+
+               
+            }
+            img{
+               margin-left: -50px;
+                margin-right: 50px;
+                width: 300px;
+                height: 500px;
+            }
+            #login{
+                border-right-width: 1px;border-right-style: solid;border-right-color: black;
+            }
+            h2{
+                text-align: center;
+                margin-left:50px;
+                color: rgb(7, 9, 121);
+            }
+            input, button{
+                margin: 1px ;
+                margin-left: 10px ;
+                border-radius: 2px;
+                box-shadow: 1px 1px 1px 1px #4334d1;
+                width: 120%;
+                height: 20px;
+            }
+            button{
+                margin-bottom: auto;
+                background: -webkit-linear-gradient(left, rgb(12, 161, 230),rgb(13, 26, 202),rgb(137, 6, 155));
+                height: 50px;
+                color: lightblue;
+            }
+            button:hover{
+                cursor: pointer;
+                box-shadow: 1px 1px 1px 1px skyblue;
+                
+                
+            }
+            input:hover{
+                box-shadow: 1px 1px 1px 1px skyblue;
+            }
+    
+        
+    
+		html{
+		height: 100%;
+		}
+		body{
+			margin:0px 0px;
+			padding: 0px 0px;
+			min-height: 100% ;
+			background-attachment: scroll;
+			background-repeat:repeat;
+			background: -moz-linear-gradient(top, rgb(14, 100, 199),rgb(121, 11, 211)n);
+			background: -webkit-linear-gradient(left, rgb(82, 177, 221),rgb(13, 26, 202),rgb(137, 6, 155));
+		}
+        
+    
+
+
+    
+           

@@ -1,0 +1,28 @@
+<html>
+    <head><h1 style="text-align: center; color: white;">WRITE YOUR COMPLAINT HERE</h1>
+        <link rel="stylesheet" href ="styles/form.css"/>
+    </head>
+<body>
+    <div class ="form">
+        <div><img id="img" class="img"  src="http://accan.org.au/images/content/Talking%20Telco/Making%20a%20complaint/MakingAComplaint-Graphics-05.png"></div>
+      <div>
+         <caption style="font-size: 6em ; text-align: center;"><h2>Complaint Form</h2></caption><br>
+       Name  <input id = "namebox" type="text"     name="Name"     placeholder="name"><br><br>
+       Room No.  <input id ="roombox"type="text" name="Room No" placeholder="Room No."><br><br>
+       Phone No.   <input id="phonebox" type="text"     name="Phone No"     placeholder="phone No."><br><br>
+       Category Of Complaint  <input id="typebox" type="text" name="Complainttype" placeholder="Mess/Furniture/Electrical"><br><br>
+        Complaint  <input id="complaintbox"type="text" name="Complaint" placeholder="Type here about complaint "><br><br>
+        <button id="insert">Send Complaint</button>
+   
+      </div>    
+      <div class="w-full text-center" style="margin-top: 21%; font-size: 15px;">
+        <button  style="margin-left: 65px;margin-top: 320px; color: aliceblue;">
+        <a style ="color: aliceblue;"href="home.html" class="text-white">click here to back</a>
+        </button>
+   </div>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+        <script src = "js/form.js"></script>
+    </body>
+</html>
